@@ -43,7 +43,18 @@ document.querySelector("#cards").innerHTML =
             createGame("brazil", "16:00", "cameroon")
         )
         
+//função do botão de mudança da coloração do Body.
+function changeBody(){
+  const bodyColor = document.querySelector("body") 
+  const curBdColor = bodyColor.getAttribute("class")
+  if (curBdColor == 'blue') {
+    bodyColor.setAttribute('class', 'green')
+  }
+  if (curBdColor == 'green') {
+    bodyColor.setAttribute('class', '') 
+  }
+  if (curBdColor == '') {
+    bodyColor.setAttribute('class', 'blue')
+  }
 
-
-
-
+}
